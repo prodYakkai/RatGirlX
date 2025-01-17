@@ -1,0 +1,16 @@
+name = "ratsukare"
+account_id = "b83bcc70906919fba432a5b9cb991432"
+main = "./dist/worker.js"
+compatibility_date = "2024-11-14"
+send_metrics = false
+
+routes = [
+  { pattern = "ratgirlx.com", custom_domain = true }
+]
+
+# Remove this if not using Cloudflare Analytics Engine
+analytics_engine_datasets = [
+  { binding = "AnalyticsEngine" }
+]
+[build]
+command = "npm run build"
