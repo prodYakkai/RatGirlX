@@ -1,6 +1,4 @@
 dist
 node_modules
-wrangler.toml
-.env
 .DS_Store
 .wrangler
