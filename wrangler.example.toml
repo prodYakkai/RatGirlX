@@ -1,0 +1,18 @@
+name = "fixtweet"
+account_id = "[CLOUDFLARE_ACCOUNT_ID]"
+main = "./dist/worker.js"
+compatibility_date = "2024-11-14"
+send_metrics = false
+
+# Remove this if not using Cloudflare Analytics Engine
+analytics_engine_datasets = [
+  { binding = "AnalyticsEngine" }
+]
+
+# Remove this if not using elongator account proxying
+services = [
+  { binding = "TwitterProxy", service = "elongator" }
+]
+
+[build]
+command = "npm run build"
